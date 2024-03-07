@@ -24,8 +24,8 @@ dependencies:
     specifier: ^0.1.1
     version: 0.1.1(tailwindcss@3.3.5)
   axios:
-    specifier: ^0.27.2
-    version: 0.27.2
+    specifier: ^0.28.0
+    version: 0.28.0
   classnames:
     specifier: ^2.3.2
     version: 2.3.2
@@ -55,7 +55,7 @@ dependencies:
     version: 0.263.1(react@18.2.0)
   nice-grpc-web:
     specifier: ^3.3.2
-    version: 3.3.2(ws@8.14.2)
+    version: 3.3.2(ws@8.16.0)
   protobufjs:
     specifier: ^7.2.5
     version: 7.2.5
@@ -67,7 +67,7 @@ dependencies:
     version: 18.2.0(react@18.2.0)
   react-hot-toast:
     specifier: ^2.4.1
-    version: 2.4.1(csstype@3.1.2)(react-dom@18.2.0)(react@18.2.0)
+    version: 2.4.1(csstype@3.1.3)(react-dom@18.2.0)(react@18.2.0)
   react-i18next:
     specifier: ^11.18.6
     version: 11.18.6(i18next@21.10.0)(react-dom@18.2.0)(react@18.2.0)
@@ -138,7 +138,7 @@ devDependencies:
     version: 6.9.0(eslint@8.52.0)(typescript@5.2.2)
   '@vitejs/plugin-react-swc':
     specifier: ^3.4.0
-    version: 3.4.0(vite@4.5.0)
+    version: 3.4.0(vite@4.5.2)
   autoprefixer:
     specifier: ^10.4.16
     version: 10.4.16(postcss@8.4.31)
@@ -170,8 +170,8 @@ devDependencies:
     specifier: ^5.2.2
     version: 5.2.2
   vite:
-    specifier: ^4.5.0
-    version: 4.5.0(@types/node@18.18.7)(less@4.2.0)(terser@5.22.0)
+    specifier: ^4.5.2
+    version: 4.5.2(@types/node@18.18.7)(less@4.2.0)(terser@5.22.0)
 
 packages:
 
@@ -1544,13 +1544,13 @@ packages:
     resolution: {integrity: sha512-zuVdFrMJiuCDQUMCzQaD6KL28MjnqqN8XnAqiEq9PNm/hCPTSGfrXCOfwj1ow4LFb/tNymJPwsNbVePc1xFqrQ==}
     dev: true
 
-  /@vitejs/plugin-react-swc@3.4.0(vite@4.5.0):
+  /@vitejs/plugin-react-swc@3.4.0(vite@4.5.2):
     resolution: {integrity: sha512-m7UaA4Uvz82N/0EOVpZL4XsFIakRqrFKeSNxa1FBLSXGvWrWRBwmZb4qxk+ZIVAZcW3c3dn5YosomDgx62XWcQ==}
     peerDependencies:
       vite: ^4
     dependencies:
       '@swc/core': 1.3.95
-      vite: 4.5.0(@types/node@18.18.7)(less@4.2.0)(terser@5.22.0)
+      vite: 4.5.2(@types/node@18.18.7)(less@4.2.0)(terser@5.22.0)
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -1773,11 +1773,12 @@ packages:
     engines: {node: '>= 0.4'}
     dev: true
 
-  /axios@0.27.2:
-    resolution: {integrity: sha512-t+yRIyySRTp/wua5xEr+z1q60QmLq8ABsS5O9Me1AsE5dfKqgnCFzwiCZZ/cGNd1lq4/7akDWMxdhVlucjmnOQ==}
+  /axios@0.28.0:
+    resolution: {integrity: sha512-Tu7NYoGY4Yoc7I+Npf9HhUMtEEpV7ZiLH9yndTCoNhcpBH0kwcvFbzYN9/u5QKI5A6uefjsNNWaz5olJVYS62Q==}
     dependencies:
-      follow-redirects: 1.15.3
+      follow-redirects: 1.15.5
       form-data: 4.0.0
+      proxy-from-env: 1.1.0
     transitivePeerDependencies:
       - debug
     dev: false
@@ -1988,18 +1989,9 @@ packages:
   /csstype@3.1.2:
     resolution: {integrity: sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==}
 
-  /debug@3.2.7:
-    resolution: {integrity: sha512-CFjzYYAi4ThfiQvizrFQevTTXHtnCqWfe7x1AhgEscTz6ZbLbfoLRLPugTQyBth6f8ZERVUSyWHFD/7Wu4t1XQ==}
-    requiresBuild: true
-    peerDependencies:
-      supports-color: '*'
-    peerDependenciesMeta:
-      supports-color:
-        optional: true
-    dependencies:
-      ms: 2.1.3
-    dev: true
-    optional: true
+  /csstype@3.1.3:
+    resolution: {integrity: sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==}
+    dev: false
 
   /debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -2453,8 +2445,8 @@ packages:
     resolution: {integrity: sha512-36yxDn5H7OFZQla0/jFJmbIKTdZAQHngCedGxiMmpNfEZM0sdEeT+WczLQrjK6D7o2aiyLYDnkw0R3JK0Qv1RQ==}
     dev: true
 
-  /follow-redirects@1.15.3:
-    resolution: {integrity: sha512-1VzOtuEM8pC9SFU1E+8KfTjZyMztRsgEfwQl44z8A25uy13jSzTj6dyK2Df52iV0vgHCfBwLhDWevLn95w5v6Q==}
+  /follow-redirects@1.15.5:
+    resolution: {integrity: sha512-vSFWUON1B+yAw1VN4xMfxgn5fTUiaOzAJCKBwIIgT/+7CuGy9+r+5gITvP62j3RmaD5Ph65UaERdOSRGUzZtgw==}
     engines: {node: '>=4.0'}
     peerDependencies:
       debug: '*'
@@ -2596,12 +2588,12 @@ packages:
       slash: 3.0.0
     dev: true
 
-  /goober@2.1.13(csstype@3.1.2):
+  /goober@2.1.13(csstype@3.1.3):
     resolution: {integrity: sha512-jFj3BQeleOoy7t93E9rZ2de+ScC4lQICLwiAQmKMg9F6roKGaLSHoCDYKkWlSafg138jejvq/mTdvmnwDQgqoQ==}
     peerDependencies:
       csstype: ^3.0.10
     dependencies:
-      csstype: 3.1.2
+      csstype: 3.1.3
     dev: false
 
   /gopd@1.0.1:
@@ -2931,12 +2923,12 @@ packages:
     resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
     dev: true
 
-  /isomorphic-ws@5.0.0(ws@8.14.2):
+  /isomorphic-ws@5.0.0(ws@8.16.0):
     resolution: {integrity: sha512-muId7Zzn9ywDsyXgTIafTry2sV3nySZeUDe6YedVd1Hvuuep5AsIlqK+XefWpYTyJG5e503F2xIuT2lcU6rCSw==}
     peerDependencies:
       ws: '*'
     dependencies:
-      ws: 8.14.2
+      ws: 8.16.0
     dev: false
 
   /iterator.prototype@1.1.2:
@@ -3041,10 +3033,8 @@ packages:
       image-size: 0.5.5
       make-dir: 2.1.0
       mime: 1.6.0
-      needle: 3.2.0
+      needle: 3.3.1
       source-map: 0.6.1
-    transitivePeerDependencies:
-      - supports-color
     dev: true
 
   /levn@0.4.1:
@@ -3174,12 +3164,6 @@ packages:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==}
     dev: true
 
-  /ms@2.1.3:
-    resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
-    requiresBuild: true
-    dev: true
-    optional: true
-
   /mz@2.7.0:
     resolution: {integrity: sha512-z81GNO7nnYMEhrGh9LeymoE4+Yr0Wn5McHIZMK5cfQCl+NDX08sCZgUc9/6MHni9IWuFLm1Z3HTCXu2z9fN62Q==}
     dependencies:
@@ -3215,17 +3199,14 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: true
 
-  /needle@3.2.0:
-    resolution: {integrity: sha512-oUvzXnyLiVyVGoianLijF9O/RecZUf7TkBfimjGrLM4eQhXyeJwM6GeAWccwfQ9aa4gMCZKqhAOuLaMIcQxajQ==}
+  /needle@3.3.1:
+    resolution: {integrity: sha512-6k0YULvhpw+RoLNiQCRKOl09Rv1dPLr8hHnVjHqdolKwDrdNyk+Hmrthi4lIGPPz3r39dLx0hsF5s40sZ3Us4Q==}
     engines: {node: '>= 4.4.x'}
     hasBin: true
     requiresBuild: true
     dependencies:
-      debug: 3.2.7
       iconv-lite: 0.6.3
       sax: 1.3.0
-    transitivePeerDependencies:
-      - supports-color
     dev: true
     optional: true
 
@@ -3235,11 +3216,11 @@ packages:
       ts-error: 1.0.6
     dev: false
 
-  /nice-grpc-web@3.3.2(ws@8.14.2):
+  /nice-grpc-web@3.3.2(ws@8.16.0):
     resolution: {integrity: sha512-qetU+H6y6jVvI5NZdtTls9UdqdCNwhr4UxqL5SfH6v8ISxucxDVPRYxnZaoZyWjMRvRgAKiQDIMu0bB0oedD0A==}
     dependencies:
       abort-controller-x: 0.4.3
-      isomorphic-ws: 5.0.0(ws@8.14.2)
+      isomorphic-ws: 5.0.0(ws@8.16.0)
       js-base64: 3.7.5
       nice-grpc-common: 2.0.2
     transitivePeerDependencies:
@@ -3531,6 +3512,10 @@ packages:
       long: 5.2.3
     dev: false
 
+  /proxy-from-env@1.1.0:
+    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+    dev: false
+
   /prr@1.0.1:
     resolution: {integrity: sha512-yPw4Sng1gWghHQWj0B3ZggWUm4qVbPwPFcRG8KyxiU7J2OHFSoEHKS+EZ3fv5l1t9CyCiop6l/ZYeWbrgoQejw==}
     requiresBuild: true
@@ -3555,14 +3540,14 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-hot-toast@2.4.1(csstype@3.1.2)(react-dom@18.2.0)(react@18.2.0):
+  /react-hot-toast@2.4.1(csstype@3.1.3)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-j8z+cQbWIM5LY37pR6uZR6D4LfseplqnuAO4co4u8917hBUvXlEqyP1ZzqVLcqoyUesZZv/ImreoCeHVDpE5pQ==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
-      goober: 2.1.13(csstype@3.1.2)
+      goober: 2.1.13(csstype@3.1.3)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -4267,8 +4252,8 @@ packages:
     hasBin: true
     dev: false
 
-  /vite@4.5.0(@types/node@18.18.7)(less@4.2.0)(terser@5.22.0):
-    resolution: {integrity: sha512-ulr8rNLA6rkyFAlVWw2q5YJ91v098AFQ2R0PRFwPzREXOUJQPtFUG0t+/ZikhaOCDqFoDhN6/v8Sq0o4araFAw==}
+  /vite@4.5.2(@types/node@18.18.7)(less@4.2.0)(terser@5.22.0):
+    resolution: {integrity: sha512-tBCZBNSBbHQkaGyhGCDUGqeo2ph8Fstyp6FMSvTtsXeZSPpSMGlviAOav2hxVTqFcx8Hj/twtWKsMJXNY0xI8w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
@@ -4369,8 +4354,8 @@ packages:
   /wrappy@1.0.2:
     resolution: {integrity: sha512-l4Sp/DRseor9wL6EvV2+TuQn63dMkPjZ/sp9XkghTEbV9KlPS1xUsZ3u7/IQO4wxtcFB4bgpQPRcR3QCvezPcQ==}
 
-  /ws@8.14.2:
-    resolution: {integrity: sha512-wEBG1ftX4jcglPxgFCMJmZ2PLtSbJ2Peg6TmpJFTbe9GZYOQCDPdMYu/Tm0/bGZkw8paZnJY45J4K2PZrLYq8g==}
+  /ws@8.16.0:
+    resolution: {integrity: sha512-HS0c//TP7Ina87TfiPUz1rQzMhHrl/SG2guqRcTOIUYD2q8uhUdNHZYJUaQ8aTGPzCh+c6oawMKW35nFl1dxyQ==}
     engines: {node: '>=10.0.0'}
     peerDependencies:
       bufferutil: ^4.0.1
